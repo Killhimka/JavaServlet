@@ -15,7 +15,14 @@ public class Main extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
         PrintWriter printWriter = resp.getWriter();
-        printWriter.write("Hello!");
-        printWriter.close();
+
+        try {
+            Integer id = Integer.parseInt(req.getParameter("id"));
+            printWriter.println("<h2>id: "+id*2+"</h2>");
+        } finally {
+            printWriter.close();
+        }
+        /*printWriter.write("Hello!");
+        printWriter.close();*/
     }
 }
