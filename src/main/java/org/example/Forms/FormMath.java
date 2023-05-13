@@ -17,7 +17,7 @@ public class FormMath extends HttpServlet {
         PrintWriter printWriter = resp.getWriter();
 
         int number1 = Integer.valueOf(req.getParameter("number1"));
-        int number2 = Integer.valueOf(req.getParameter("number2"));
+        Integer number2 = Integer.valueOf(req.getParameter("number2"));
         String action = req.getParameter("action");
         try {
             if (action.contains("*"))

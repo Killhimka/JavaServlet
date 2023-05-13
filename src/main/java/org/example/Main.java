@@ -22,6 +22,7 @@ public class Main extends HttpServlet {
         } finally {
             printWriter.close();
         }
+
         /*printWriter.write("Hello!");
         printWriter.close();*/
     }
