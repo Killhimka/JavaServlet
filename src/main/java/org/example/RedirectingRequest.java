@@ -1,4 +1,4 @@
-package org.example.Forms;
+package org.example;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
