@@ -2,6 +2,7 @@ package org.example.Forms;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -20,6 +21,11 @@ public class FormUser extends HttpServlet {
         String gender = req.getParameter("gender");
         String country = req.getParameter("country");
         String [] courses = req.getParameterValues("courses");
+        Cookie[] cookie = new Cookie[0];
+
+            for (Object cookie1: cookie){
+
+            }
 
         try {
             printWriter.println("<p>Name: "+name+"</p>");
